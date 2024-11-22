@@ -484,8 +484,6 @@ with gr.Blocks() as demo:
     with gr.Tab("Крок 5"):
         output5_gallery = gr.Gallery(label="Синтезовані RGB Зображення за Схемами", columns=6, height="auto")
 
-    #     with gr.Tab("Крок 6"):
-        #         output6_gallery = gr.Gallery(label="8 Найінформативніших Зображень", columns=4, height="auto")
     
     # Прив'язка кнопок до функцій
     btn_step1.click(
@@ -518,11 +516,6 @@ with gr.Blocks() as demo:
         outputs=output5_gallery
     )
 
-    #     btn_step6.click(
-    #     step6_informative_images,
-    #     inputs=[vis_input, ir_input],
-    #     outputs=output6_gallery
-    #     )
-    
+
     demo.launch(share=True, debug=True)
 
